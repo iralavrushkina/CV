@@ -1,0 +1,226 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: #c0cfdf;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  background-color: #02023f;
+}
+.sidebar__photo {
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/photo.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 30px 0;
+}
+.sidebar__info {
+  color: white;
+}
+
+.info__block {
+  margin: 0 0 30px;
+  padding: 0 30px;
+}
+.info__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 15px;
+  border-bottom: 2px solid;
+  padding: 5px;
+}
+.info__link {
+  margin: 0 0 8px;
+}
+.info__link a {
+  font-size: 18px;
+  opacity: 80%;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.5s -webkit-text-decoration;
+  transition: 0.5s -webkit-text-decoration;
+  transition: 0.5s text-decoration;
+  transition: 0.5s text-decoration, 0.5s -webkit-text-decoration;
+}
+.info__link a:hover {
+  text-decoration: underline;
+}
+.info__item {
+  list-style: disc;
+  margin: 8px 15px 0;
+  color: orange;
+}
+.info__item span {
+  color: white;
+  opacity: 80%;
+  font-size: 18px;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: white;
+  padding: 50px 60px;
+}
+.main__subtitle {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+.main__name {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+.main__discription {
+  margin: 0 0 15px;
+  line-height: normal;
+  font-size: 18px;
+  opacity: 80%;
+  width: 60%;
+  text-align: justify;
+}
+.main__block {
+  margin: 0 0 25px;
+}
+
+.block__title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 15px;
+  border-bottom: 2px solid;
+  padding: 0 0 5px;
+}
+.block__item {
+  margin: 0 0 25px;
+}
+.block__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+.block__subtitle_orange {
+  color: orange;
+}
+.block__subtitle_up, .block__subtitle_orange {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.block__subtitle_up {
+  margin: 0 0 0 15px;
+}
+.block__link {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: 0.5s -webkit-text-decoration;
+  transition: 0.5s -webkit-text-decoration;
+  transition: 0.5s text-decoration;
+  transition: 0.5s text-decoration, 0.5s -webkit-text-decoration;
+  position: relative;
+}
+.block__link:hover {
+  text-decoration: underline;
+}
+.block__date {
+  font-size: 15px;
+  width: 70%;
+  margin: 0 0 10px;
+  opacity: 65%;
+}
+.block__date span {
+  margin: 0 5px;
+}
+.block__text {
+  font-size: 18px;
+  margin: 0 0 5px 16px;
+  opacity: 80%;
+  list-style: disc;
+}
+.block__certifacate {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+  margin: 15px 0 0;
+  -webkit-transition: 0.5s -webkit-text-decoration;
+  transition: 0.5s -webkit-text-decoration;
+  transition: 0.5s text-decoration;
+  transition: 0.5s text-decoration, 0.5s -webkit-text-decoration;
+}
+.block__certifacate:hover {
+  text-decoration: underline;
+}
