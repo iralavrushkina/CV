@@ -63,26 +63,40 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 1440px;
   padding: 25px;
   margin: 0 auto;
-  background-color: #c0cfdf;
+  background-color: #e0dcda;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidebar {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 300px;
-          flex: 0 0 300px;
-  background-color: #02023f;
+      -ms-flex: 0 0 450px;
+          flex: 0 0 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #60594f;
 }
 .sidebar__photo {
-  width: 100%;
+  width: 350px;
   height: 350px;
   background-image: url("../img/photo.jpg");
   background-size: cover;
   background-position: center;
   margin: 30px 0;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .sidebar__info {
   color: white;
@@ -93,20 +107,24 @@ table {
   padding: 0 30px;
 }
 .info__title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
   margin: 0 0 15px;
   border-bottom: 2px solid;
   padding: 5px;
 }
 .info__link {
-  margin: 0 0 8px;
+  margin: 0 0 9px;
+  font-size: 21px;
+  opacity: 80%;
+  color: white;
 }
 .info__link a {
-  font-size: 18px;
+  font-size: 21px;
   opacity: 80%;
   color: white;
   text-decoration: none;
+  padding: 5px;
   -webkit-transition: 0.5s -webkit-text-decoration;
   transition: 0.5s -webkit-text-decoration;
   transition: 0.5s text-decoration;
@@ -114,16 +132,17 @@ table {
 }
 .info__link a:hover {
   text-decoration: underline;
+  opacity: 100%;
 }
 .info__item {
   list-style: disc;
   margin: 8px 15px 0;
-  color: orange;
+  color: #e0dcda;
 }
 .info__item span {
   color: white;
   opacity: 80%;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 .main {
@@ -134,29 +153,29 @@ table {
   padding: 50px 60px;
 }
 .main__subtitle {
-  font-size: 21px;
+  font-size: 36px;
   font-weight: bold;
-  margin: 0 0 15px;
+  margin: 0 0 25px;
 }
 .main__name {
-  font-size: 42px;
+  font-size: 58px;
   font-weight: bold;
-  margin: 0 0 15px;
+  margin: 0 0 40px;
 }
 .main__discription {
-  margin: 0 0 15px;
+  margin: 0 0 25px;
   line-height: normal;
-  font-size: 18px;
+  font-size: 23px;
   opacity: 80%;
-  width: 60%;
+  width: 100%;
   text-align: justify;
 }
 .main__block {
-  margin: 0 0 25px;
+  margin: 0 0 40px;
 }
 
 .block__title {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 600;
   margin: 0 0 15px;
   border-bottom: 2px solid;
@@ -166,15 +185,15 @@ table {
   margin: 0 0 25px;
 }
 .block__subtitle {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
   margin: 0 0 10px;
 }
 .block__subtitle_orange {
-  color: orange;
+  color: #60594f;
 }
 .block__subtitle_up, .block__subtitle_orange {
-  font-size: 12px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 800;
 }
@@ -194,7 +213,7 @@ table {
   text-decoration: underline;
 }
 .block__date {
-  font-size: 15px;
+  font-size: 20px;
   width: 70%;
   margin: 0 0 10px;
   opacity: 65%;
@@ -203,14 +222,14 @@ table {
   margin: 0 5px;
 }
 .block__text {
-  font-size: 18px;
+  font-size: 23px;
   margin: 0 0 5px 16px;
   opacity: 80%;
   list-style: disc;
 }
 .block__certifacate {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   font-style: italic;
   color: black;
